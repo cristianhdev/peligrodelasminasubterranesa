@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Regiones Naturales de América</title>
+	<link rel="preload" href="styles.css" as="styles">
+	<link rel="preload" href="script.js" as="script">
+	<link rel="stylesheet" href="./src/animate.min.css">
+	<link rel="stylesheet" href="./src/styles.css">
+</head>
+
+<body onLoad="init()">
+	<div style="position: absolute;top: 0px;z-index: 1;">
+		<img src="./assets/Img/logo.png" alt="logo: escuela nueva">
+	</div>
+
+	<div class="contenedor-presentacion">
+		<div class="contenedor-bienvenida">
+			<div class="franjasuperior">
+
+			</div>
+			<div class="contenido-actividad-bienvenida">
+
+				<div class="texto-bienvenida">
+					<div>
+						<img src="./assets/Img/titulo.png" alt="logo: titulo">
+					</div>
+					<span class="textos-titulo-bienvenida ">Actividad</span>
+					<br>
+					<div style="text-align: center;">
+						<img src="./assets/Img/ImagenBienvenida.png" class="responsive">
+					</div>
+					<p>A continuación recorramos el contienente Americano y conozcamos las distintas Regiones Naturales.
+					</p>
+
+					<div class="button" onclick="InicioActividad()">Comenzar</div>
+				</div>
+
+			</div>
+			<div class="franjaInferior">
+
+			</div>
+		</div>
+		<div class="contenedor-imagen-actividad">
+			<div class="titulo-imagen animate__animated animate__fadeIn animate__delay-1s">
+
+				<object type="image/svg+xml" data="./assets/img/mapaPartesVectorCompleto2.svg" id="mapa-bienvenida"
+					class="responsive-imagen-bienvenida">
+
+				</object>
+			</div>
+			<div class="recuadro-texto-mapa">
+				<div id="Pradera-completo" class="elementos-mapa-over">
+					
+					<div class="texto-descripcion-imagen1 animate__animated animate__fadeIn animate__faster">
+						<div id="Pradera-imagen" class="animate__animated animate__zoomIn animate__faster">
+							<div class="titulo-imagen-descripcion">
+								Pradera
+							</div>
+						</div>
+						<p>Cubre la tercera parte de la superficie de Estados Unidos y grandes extensiones de otros continentes. En América del Norte a las grandes praderas se les conoce con el nombre de planicies y en América del Sur se denominan pampas. La fauna característica de la zona está conformada por bisontes, venados y caballos.</p>
+
+						<p>De las praderas de América del Sur son originarios roedores y otros animales pequeños: vizcachas, maras y cuises, armadillos como los peludos y mulitas, lagartijas y zorros. Entre las aves se encuentran ñandúes, perdices americanas, lechuzas, patos, martineras, entre otros.</p>
+					</div>
+				</div>
+				<div id="Tundra-completo" class="elementos-mapa-over">
+					
+					<div class="texto-descripcion-imagen2 animate__animated animate__fadeIn animate__faster">
+						<div id="Tundra-imagen" class="animate__animated animate__zoomIn animate__faster">
+							<div class="titulo-imagen-descripcion">
+								Tundra
+							</div>
+						</div>
+						<p>Esta región natural se caracteriza por tener un clima frio, desprovista de vegetación arbórea y salpicada de lagos, lagunas y pantanos. Cubre una superficie de casi 2.025.000 hectáreas y circunda el polo norte.</p>
+
+						<p>Las precipitaciones son cortas y el agua se congela, por tanto durante los nueve o diez meses de invierno, es una zona casi inaccesible para la mayoria de seres vivientes. Sólo una pequeña cada deshiela en verano, la cual permite el crecimiento de cierta vegetación compuesta por pastos juncos, musgos, líquenes, sauces y adebules.</p>
+					</div>
+				</div>
+				<div id="Taiga-completo" class="elementos-mapa-over">
+
+					
+					<div class="texto-descripcion-imagen3 animate__animated animate__fadeIn animate__faster">
+						<div id="Taiga-imagen" class="animate__animated animate__zoomIn animate__faster">
+							<div class="titulo-imagen-descripcion">
+								Taiga
+							</div>
+						</div>
+						<p>Es una región caracteristica por formaciones boscosas de coníferas. Se desarrolla sobre todo en Canadá y el norte de Estados Unidos.</p>
+
+						<p>La vegetación dominante en la taiga es el bosque de coniferas. En las zonas de clima más duro del bosque es muy uniforme y puede estar formado exclusivamente por una sola clase de árbol. Las hojas en forma de aguja de las coníferas les permiten soportar bien las heladas y perder poca agua.</p>
+
+						<p>Los animales más característicos de la taiga son el oso pardo, lobo, zorro, comadreja, reno, ciervo y alce.</p>
+					</div>
+				</div>
+				<div id="Desierto-completo" class="elementos-mapa-over">
+					
+					<div class="texto-descripcion-imagen4 animate__animated animate__fadeIn animate__faster">
+						<div id="Desierto-imagen" class="animate__animated animate__zoomIn animate__faster">
+							<div class="titulo-imagen-descripcion">
+								Desierto
+							</div>
+						</div>
+						<p>Clima caliente, con pocas posibilidades de vida vegetal y animal. Temperaturas muy calientes en el día y muy frias en la noche. Escasez de lluvias.</p>
+
+						<p>En el desierto sólo logran sobrevivir algunos animales: lagartijas, serpientes, arañas, alacranes, buitres coyotes, etc.</p>
+						<p>Al igual que en la fauna, sólo se adaptan algunas plantas, Éstas se protegen de los animales con espinas y con gruesas capas de piel. Algunas de ellas son: cactus, palmeras, nopales y diversos arbustos y plantas de los oasis.</p>
+					</div>
+				</div>
+				<div id="Selva-completo" class="elementos-mapa-over">
+					
+					<div class="texto-descripcion-imagen5 animate__animated animate__fadeIn animate__faster" >
+						<div id="Selva-imagen" class="animate__animated animate__zoomIn animate__faster">
+							<div class="titulo-imagen-descripcion">
+								Selva
+							</div>
+						</div>
+						<p>Es rico en cuanto a flora y fauna se refiere, cubre vastas tierras de Suramérica en la cuenca Amazónica y América Central.</p>
+
+						<p>Llueve casi todos los días. Abunda la energia solar y hay pocas variaciones de temperatura del día a la noche, y de un mes a otro.</p>
+
+						<p>El clima cálido húmedo produce gran abundancia de variedad de plantas, incluidos millones de especies de enormes árboles.</p>
+						<p>Esta poblada de insectos, arácnidos, reptiles, anfibios, aves y mamiferos.</p>
+					</div>
+				</div>
+				<div id="Sabana-completo" class="elementos-mapa-over">
+				
+					<div class="texto-descripcion-imagen6 animate__animated animate__fadeIn animate__faster">
+						<div id="Sabana-imagen" class="animate__animated animate__zoomIn animate__faster">
+							<div class="titulo-imagen-descripcion">
+								Sabana
+							</div>
+						</div>
+						<p>Son regiones propias de los trópicos. El suelo es arcilloso e impermeable, con dos estaciones, la húmeda y la seca, que facilita la propagación de incendios.</p>
+
+						<p>La sabana presenta variedad de ecosistemas, como campos limpios, zonás de pastos, árboles y arbustos.</p>
+						<p>Los llanos de Colombia y Venezuela suman aproximadamente unos 500,000 kilómetros cuadrados.</p>
+						<p>El Chaco, en territorios de Bolivia, Paraguay y Argentina, abarca casi 1.000.000 de kilómetros cuadrados.</p>
+					</div>
+
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<!--  <span class="close">&times;</span> -->
+
+		</div>
+
+	</div>
+
+
+
+
+	<script src="src/index.js">
+	</script>
+</body>
+
+</html>
